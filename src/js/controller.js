@@ -118,7 +118,18 @@ const controlAddRecipe = async function (NewRecipe) {
   }
 };
 
-const init = function () {
+// const init = function () {
+//   bookmarksView.addHandlerRender(controlBookmarks);
+//   recipeView.addHandlerRender(controlRecipe);
+//   recipeView.addHandlerBookmark(controlAddBookmark);
+//   recipeView.addHandlerUpdateServings(controlServings);
+//   searchView.addHandlerSearch(controlSearchResults);
+//   paginationView.addhandlerClick(controlPagination);
+//   addRecipeView.addHandlerUploadRecipe(controlAddRecipe);
+// };
+// init();
+
+(function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipe);
   recipeView.addHandlerBookmark(controlAddBookmark);
@@ -126,15 +137,4 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addhandlerClick(controlPagination);
   addRecipeView.addHandlerUploadRecipe(controlAddRecipe);
-};
-init();
-
-// (function () {
-// bookmarksView.addHandlerRender(controlBookmarks);
-// recipeView.addHandlerRender(controlRecipe);
-// recipeView.addHandlerBookmark(controlAddBookmark);
-// recipeView.addHandlerUpdateServings(controlServings);
-// searchView.addHandlerSearch(controlSearchResults);
-// paginationView.addhandlerClick(controlPagination);
-// addRecipeView.addHandlerUploadRecipe(controlAddRecipe);
-// })();
+})();
