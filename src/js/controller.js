@@ -118,23 +118,28 @@ const controlAddRecipe = async function (NewRecipe) {
   }
 };
 
-// const init = function () {
-//   bookmarksView.addHandlerRender(controlBookmarks);
-//   recipeView.addHandlerRender(controlRecipe);
-//   recipeView.addHandlerBookmark(controlAddBookmark);
-//   recipeView.addHandlerUpdateServings(controlServings);
-//   searchView.addHandlerSearch(controlSearchResults);
-//   paginationView.addhandlerClick(controlPagination);
-//   addRecipeView.addHandlerUploadRecipe(controlAddRecipe);
-// };
-// init();
+const controlWW = (function () {
+  console.log("update");
+})(
+  // const init = function () {
+  //   bookmarksView.addHandlerRender(controlBookmarks);
+  //   recipeView.addHandlerRender(controlRecipe);
+  //   recipeView.addHandlerBookmark(controlAddBookmark);
+  //   recipeView.addHandlerUpdateServings(controlServings);
+  //   searchView.addHandlerSearch(controlSearchResults);
+  //   paginationView.addhandlerClick(controlPagination);
+  //   addRecipeView.addHandlerUploadRecipe(controlAddRecipe);
+  // };
+  // init();
 
-(function () {
-  bookmarksView.addHandlerRender(controlBookmarks);
-  recipeView.addHandlerRender(controlRecipe);
-  recipeView.addHandlerBookmark(controlAddBookmark);
-  recipeView.addHandlerUpdateServings(controlServings);
-  searchView.addHandlerSearch(controlSearchResults);
-  paginationView.addhandlerClick(controlPagination);
-  addRecipeView.addHandlerUploadRecipe(controlAddRecipe);
-})();
+  function () {
+    bookmarksView.addHandlerRender(controlBookmarks);
+    recipeView.addHandlerRender(controlRecipe);
+    recipeView.addHandlerBookmark(controlAddBookmark);
+    recipeView.addHandlerUpdateServings(controlServings);
+    searchView.addHandlerSearch(controlSearchResults);
+    paginationView.addhandlerClick(controlPagination);
+    addRecipeView.addHandlerUploadRecipe(controlAddRecipe);
+    controlWW();
+  }
+)();
